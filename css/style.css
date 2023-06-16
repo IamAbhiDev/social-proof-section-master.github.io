@@ -142,3 +142,85 @@ body {
     font-weight: var(--medium);
     margin-top: 1.8rem;
 }
+
+/*Responsive Web Design*/
+
+@media screen and (min-width: 75rem) {
+    body {
+        background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: left top, right bottom;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 85%;
+    }
+
+    .container__header {
+        text-align: start;
+        padding: 0 2rem;
+    }
+
+    .container__header__heading {
+        font-size: 3.6rem;
+        margin-right: 2rem;
+    }
+
+    .container__header__text {
+        font-size: 1.2rem;
+        font-weight: var(--medium);
+        line-height: 1.2;
+    }
+
+    .container__rating {
+        margin-top: 1.5rem;
+    }
+
+    .container__rating__row {
+        display: flex;
+        align-items: center;
+        width: 440px;
+    }
+
+    .container__rating__row:nth-child(2) {
+        margin-left: 2.8rem;
+    }
+
+    .container__rating__row:nth-child(3) {
+        margin-left: 5.6rem;
+    }
+
+    .container__rating__row__stars {
+        margin: 0 1.2rem;
+        margin-right: 2rem;
+    }
+
+    .container__rating__row__text {
+        margin-top: 0;
+    }
+
+    .container__testimonial {
+        display: flex;
+        grid-column: span 2;
+    }
+
+    .container__testimonial__card {
+        margin: 0 1.2rem;
+    }
+
+    .container__testimonial__card:not(:first-child) {
+        margin: 0 1.2rem;
+    }
+
+    .container__testimonial__card:first-child {
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+
+    .container__testimonial__card:last-child {
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+    }
+}
